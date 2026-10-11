@@ -101,8 +101,8 @@ useSchemaOrg([
   defineBreadcrumb({
     itemListElement: [
       { name: 'LexHare', item: 'https://lex-hare.github.io/' },
-      { name: '法學期刊引註格式凡例', item: '/' },
-      { name: '格式總覽' },
+      { name: '法學期刊引註格式凡例', item: 'https://lex-hare.github.io/taiwan-law-journals-citation-reader/' },
+      { name: '格式總覽', item: 'https://lex-hare.github.io/taiwan-law-journals-citation-reader/citations' },
     ],
   }),
 ])
