@@ -86,7 +86,19 @@
 </template>
 
 <script setup lang="ts">
+const src = computed(() => citationData.value?.sourceDataIntroduction)
 
+useSchemaOrg([
+  defineWebPage({
+    name: '引註格式總覽 - 法學期刊引註格式凡例',
+    dateModified: src.value?.lastUpdated,
+    isBasedOn: {
+      '@type': 'CreativeWork',
+      name: src.value?.name,
+      url: src.value?.sourceURI,
+    },
+  }),
+])
 
 useSeoMeta({
   title: '引註格式總覽 - 法學期刊引註格式凡例',
