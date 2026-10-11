@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/fonts', '@nuxt/scripts', '@nuxtjs/seo'],
   css: ['@picocss/pico/css/pico.fluid.classless.min.css', '~/assets/css/main.css'],
   site: {
-    url: 'https://lex-hare.github.io/taiwan-law-journals-citation-reader/',
+    url: 'https://lex-hare.github.io',
     name: '法學期刊引註格式凡例：線上查閱',
     defaultLocale: 'zh-Hant-TW'
   },
