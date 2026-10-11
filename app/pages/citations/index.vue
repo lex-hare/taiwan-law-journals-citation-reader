@@ -15,6 +15,12 @@
       </label>
     </fieldset>
 
+    <!-- 校對狀態警告 -->
+    <aside class="proofread-warning" role="note">
+      <strong>⚠ 校對狀態提醒：</strong>本專案僅校對中文、法文的引註格式，英文、日文、德文係由程式初步自 PDF
+      檔分析，未經人工確認，請謹慎使用。
+    </aside>
+
     <!-- TOC + Content layout -->
     <div class="citations-layout">
       <!-- Desktop TOC: visible sidebar -->
