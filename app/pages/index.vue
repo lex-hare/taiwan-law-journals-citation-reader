@@ -34,6 +34,13 @@
 import citationData from '~~/content/citation-style.json'
 import type { CitationRule } from '~/types/citation'
 
+useSeoMeta({
+  title: '法學期刊引註格式凡例：線上查閱',
+  ogTitle: '法學期刊引註格式凡例：線上查閱',
+  description: '本專案以網頁呈現〈法學期刊引註格式凡例〉，讓使用者可以方便地在各種載具上瀏覽。',
+  ogDescription: '本專案以網頁呈現〈法學期刊引註格式凡例〉，讓使用者可以方便地在各種載具上瀏覽。',
+})
+
 const categories = citationData.rule as CitationRule[]
 
 function anchorId(code: string): string {

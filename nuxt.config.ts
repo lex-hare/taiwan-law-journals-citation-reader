@@ -6,6 +6,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content', '@nuxt/fonts', '@nuxt/scripts', '@nuxtjs/seo'],
   css: ['@picocss/pico/css/pico.fluid.classless.min.css', '~/assets/css/main.css'],
+  site: {
+    url: 'https://lex-hare.github.io/taiwan-law-journals-citation-reader/',
+    name: '法學期刊引註格式凡例：線上查閱',
+    defaultLocale: 'zh-Hant-TW'
+  },
+  robots: {
+    robotsTxt: false // 因本專案係部署在 GitHub 子資料夾路徑下，故不適用 robots.txt 設定
+  },
   typescript: {
     strict: true,
   },
