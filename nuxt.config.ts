@@ -11,6 +11,9 @@ export default defineNuxtConfig({
     name: '法學期刊引註格式凡例：線上查閱',
     defaultLocale: 'zh-Hant-TW'
   },
+  ogImage: {
+    enabled: false,
+  },
   robots: {
     robotsTxt: false // 因本專案係部署在 GitHub 子資料夾路徑下，故不適用 robots.txt 設定
   },
