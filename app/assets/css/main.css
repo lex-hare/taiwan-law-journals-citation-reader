@@ -176,6 +176,37 @@ nav[aria-label='頁面大綱'] a:hover {
   }
 }
 
+/* ---- 麵包屑 ---- */
+nav[aria-label='麵包屑導覽列'] {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+nav[aria-label='麵包屑導覽列'] ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav[aria-label='麵包屑導覽列'] li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+nav[aria-label='麵包屑導覽列'] li + li::before {
+  content: '/';
+  color: var(--pico-muted-color);
+}
+
+nav[aria-label='麵包屑導覽列'] [aria-current='page'] {
+  color: var(--pico-muted-color);
+}
+
 /* ---- CitationCard ---- */
 article.citation-card {
   margin-bottom: 1.5rem;

@@ -1,5 +1,16 @@
 <template>
   <div>
+    <!-- 麵包屑：對應 useSchemaOrg 的 defineBreadcrumb -->
+    <nav aria-label="麵包屑導覽列">
+      <ul>
+        <li><NuxtLink to="https://lex-hare.github.io/">LexHare</NuxtLink></li>
+        <li>
+          <NuxtLink to="/">法學期刊引註格式凡例</NuxtLink>
+        </li>
+        <li><span aria-current="page">格式總覽</span></li>
+      </ul>
+    </nav>
+
     <h1>引註格式總覽</h1>
 
     <!-- Language filter -->
