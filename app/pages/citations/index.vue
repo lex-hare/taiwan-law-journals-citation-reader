@@ -97,6 +97,13 @@
 </template>
 
 <script setup lang="ts">
+
+import type { CitationRule } from '~/types/citation'
+
+const { data: citationData } = await useAsyncData('citation-style', () =>
+  queryCollection('citation_style').first(),
+)
+
 const src = computed(() => citationData.value?.sourceDataIntroduction)
 
 useSchemaOrg([
@@ -124,12 +131,6 @@ useSeoMeta({
   description: '這個網頁把〈法學期刊引註格式凡例〉處理成方便瀏覽的型式，可以依據文獻語言不同來分組。',
   ogDescription: '這個網頁把〈法學期刊引註格式凡例〉處理成方便瀏覽的型式，可以依據文獻語言不同來分組。',
 })
-
-import type { CitationRule } from '~/types/citation'
-
-const { data: citationData } = await useAsyncData('citation-style', () =>
-  queryCollection('citation_style').first(),
-)
 
 const categories = computed(() => (citationData.value?.rule ?? []) as CitationRule[])
 
