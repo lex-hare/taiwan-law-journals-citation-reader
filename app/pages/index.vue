@@ -1,5 +1,13 @@
 <template>
   <div>
+    <!-- 麵包屑：對應 useSchemaOrg 的 defineBreadcrumb -->
+    <nav aria-label="麵包屑導覽列">
+      <ul>
+        <li><NuxtLink to="https://lex-hare.github.io/">LexHare</NuxtLink></li>
+        <li><span aria-current="page">法學期刊引註格式凡例</span></li>
+      </ul>
+    </nav>
+
     <h1>法學期刊引註格式凡例：線上查閱</h1>
 
     <p>
@@ -33,6 +41,21 @@
 <script setup lang="ts">
 import citationData from '~~/content/citation-style.json'
 import type { CitationRule } from '~/types/citation'
+
+useSchemaOrg([
+  defineWebPage({
+    name: '法學期刊引註格式凡例：線上查閱',
+  }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: 'LexHare', item: 'https://lex-hare.github.io/' },
+      {
+        name: '法學期刊引註格式凡例',
+        item: 'https://lex-hare.github.io/taiwan-law-journals-citation-reader/',
+      },
+    ],
+  }),
+])
 
 useSeoMeta({
   title: '法學期刊引註格式凡例：線上查閱',
